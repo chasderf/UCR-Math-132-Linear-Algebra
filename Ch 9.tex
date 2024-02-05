@@ -1,0 +1,125 @@
+\documentclass {article}
+
+\begin{document}
+
+\textbf {Chapter 9 Complex Sccalars}
+
+\textit {Fundamental Theorem of Algebra} Every polynomial equation with coefficients in C has n solutions in C, where n is the degree of the polynomial and the solutions are counted with their algebraic multiplicity.
+\\
+
+The modulus (or magnitude) of the complex number z = a + bi is $\mid z \mid = \sqrt{a^2 + b^2}$ which is the length of the vector in Figure 9.1.
+
+\textit { Geometric Representation of $z_1 z_2$ }
+\\
+1. $ \mid z_1 z_2 \mid = \mid z_1 \mid \mid z_2 \mid$
+\\
+2. Arg($z_1$) + Arg($z_2$) is an argument of $z_1 z_2$.
+
+\textit { Geometric Representation of $z_1 / z_2$ }
+\\
+1. $ \mid z_1 / z_2 \mid = \mid z_1 \mid / \mid z_2 \mid$
+\\
+2. Arg($z_1$) + Arg($z_2$) is an argument of $z_1 z_2$.
+
+nth roots of z = r(cos $\theta$ + i sin $\theta$) \\
+The nth roots of z are
+
+\begin{center}
+$ r^{1/n} (cos( {\frac{\theta} {n}} + {\frac {2k\pi} {n}} ) + i sin( \frac{\theta} {n} + \frac {2k\pi}{n}))$
+\end{center}
+
+for k = 0, 1,2, ... , n - 1.
+
+\textbf { Chapter 9.2 Matrices and Vector Spaces with Complex scalars }
+\textbf {Definition 9.1 Euclidean inner product} Let u = {$u_1 , {u_2} ,..., {u_n}$} and v = [${v_1}, {v_2}, ... , {v_n}$] be vectors in $C^n$. The Euclidean inner product of u and v is 
+\begin{center}
+$ u, v = \bar{u_1} v_1 + \bar{u_2} v_2 + ... + \bar {u_n} v_n.$
+\end{center}
+
+\textbf {Theorem 9.2 Properties of the Euclidean Inner Product} \\
+Let u, v and w be vectors in $c^n$, and let z be a complex scalar. \\
+
+1. $\langle u, u \rangle \leq$ 0, and $\langle u , u \rangle$ = 0 if and only if u = 0 \\
+
+2. $\langle u, v \rangle  = {\langle \bar{v, u} \rangle}$,
+\\
+3. $\langle (u + v), w \rangle = {\langle u, w \rangle} + \langle v, w \rangle , $
+\\
+4. $\langle w, (u + v) \rangle = {\langle w, u \rangle} + {\langle w, v \rangle},$
+\\
+5. $\langle zu , v \rangle = \bar{z} \langle u, v \rangle, and \langle u, zv \rangle = z \langle u, v \rangle $
+
+\textit {The Euclidean inner product in $C^n$ is not commutative}
+
+\textbf {Definition 9.2 Conjugate Transpose or Hermitian Adjoint} Let A = [$a_{ij}$] be an m X n matrix with complex scalar entries. \\
+
+1. The conjugate of A is the m X n matrix $\bar{A} = [\bar{a{ij}}]$. \\
+
+2. The conjugate transpose (or Hermitian adjoint) of A is the matrix $A^* = [\bar{a_ij}]^T$. 
+
+\textbf {Theorem 9.3 Properties of the Conjugate Transpose} \\
+Let A and B be m X n matrices. Then \\
+1. $(A^*)^* = A$ \\
+2. $(A + B)^* = A^* + B^*$, \\
+3. $(zA)^* = \bar{z}A^*$ for any scalar $ z \in C, $ \\
+4. If A and B are square matrices, $(AB)^* = B^*A^*$
+
+\textbf {Definition 9.3 Unitary Matrix} \\
+A square matrix U with complex entries in unitary if its column vectors are orthogonal unit vectors - that is, if $U^*U=I$
+
+\textbf {Eigenvalues and diagonalization}
+
+\textit {Every real symmetric matrix is diagonalizable by a real orthogonal matrix.}
+
+\textit {Every Hermitian matrix is diagonalizable by a unitary matrix }
+
+\textbf {Theorem 9.4 Schur's Lemma} \\
+Let A be an n X n (complex) matrix. There is a unitary matrix U such that $U^{-1}AU$ is upper trangular.
+
+\textbf {Theorem 9.5 Spectral Theorem for Hermitian Matrices} \\
+If A is a Hermitian matrix, there exists a unitary matrix U such that $U^{-1}AU$ is a diagonal matrix. Furthermore, all eigenvalues of A are real.
+
+\textit {Corollary Fundamental Theorem of Real Symmetric Matrices} \\
+Every n X n real symmetric matrix has n real eigenvalues, counted with their algebraic multiplicity, and is diagonalizable by a real orthogonal matrix.
+
+\textbf {Theorem 9.6 Orthogonality of Eigenspaces of a Hermitian Matrix} \\
+The eigenvectors of a Hermitian matrix corresponding to distinct eigenvalues are orthogonal.
+
+\textbf {Definition 9.5 Normal Matrix} \\
+A square matrix A is normal if it commutes with its conjugate transpose, so that $AA^* = A^*A$.
+
+\textbf {Theorem 9.7 Spectral Theorem for Normal Matrices} \\ 
+A square matrix A is unitarily diagonalizable if and only if it is a normal matrix.
+
+\textbf {Chapter 9.4 Jordan Canonical Form}
+
+\textbf {Definition 9.6 Jordan Block} \\
+An m X m matrix is a Jordan block if it is structured as follows: \\
+1. All diagonal entries are equal \\
+2. Each entry immediately above a diagonal entry is 1. \\
+3. All other entries are zero.
+
+\textbf {Theorem 9.8 Properties of a Jordan Block} \\
+Let J be an m X m Jordan block with diagonal entries all equal to $\lambda$. Then the following properties hold \\
+1. (J - $\lambda I)e_i$ = $e_{i-1}$ for $1 < i \leq m$, and $(J - \lambda I)e_1 = 0.$ \\
+
+2. (J - $\lambda I)^m = O, but (J - \lambda I)^i \neq O for i < m.$ \\
+3. $Je_i = \lambda e_i + e_{i-1} for 1 < i \leq m,$ whereas $Je_1 = \lambda e_1$
+
+\textbf {Definition 9.7 Jordan Canonical Form} An n X n matrix J is a Jordan canonical form if it consists of Jordan blocks, placed corner to corner along the main diagonal, as in matrix (4) with only zero entries outside these Jordan blocks.
+
+\textbf {Definition 9.8 Jordan Basis} \\
+Let A be an n X n matrix. An ordered basis B = $(b_1,b_2,...,b_n)$ of $C^n$ is a Jordan basis for A if, for 1 $\leq j \leq n$, we have either $Ab_j = \lambda b_j$ or $Ab_j = \lambda b_j + b_{j-1}$, where $\lambda$ is an eigenvalue of A that we say is associated with $b_j$. If $Ab_j = \lambda b_j + b_{j-1}$, we require that the eigenvalue associated with $b_{j-1}$ also be $\lambda$.
+
+\textbf {Theorem 9.9 Jordan Canonical Form of a Square Matrix} \\
+Let A be a square matrix. There exists an invertible matrix C such that the matrix J = $C^{-1}AC$ is a Jordan Canonical form. This Jordan canonical form is unique, except for the order of the Jordan bloacks of which it is composed.
+
+
+
+
+
+
+
+
+
+\end{document}

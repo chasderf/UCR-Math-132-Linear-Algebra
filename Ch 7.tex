@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\begin{document}
+
+
+
+
+\textbf {Chapter 7 Change of Basis}
+
+\textbf {Chapter 7.1 Coordination and Change of Basis}
+
+\textbf {Chapter 7.2 Matrix Representation and Similarity}
+
+\textbf {Theorem 7.1 Similarity of Matrix Representatoins of T} Let T be linear transformation of a finite-dimensional vector space V into itself, and let B and B' be ordered bases of V. Let $R_B$ and $R_{B'}$ be the matrix representations of T relative to B and B', respectively. Then 
+
+\begin{center}
+$R_{B'} = C^{-1}R_BC,$
+
+\end{center}
+
+where C = $C_{B'B}$ is the change-of-coordinates matrix from B' to B. Conseqeuntly, $R_{B'}$ and $R_B$ are similar matrices.
+
+\textit {Significance of the Similarity Relationship for Matrices} Two n X n matrices are simiilar if and only if they are matrix representations of the same linear transformation T relative to suitable ordered bases.
+
+\textit {Similar matrices have the same eigenvalues}
+
+\textbf {Theorem 7.2 Eigenvalues and Eigenvectors of Similar Matrices } Let A and R be similar n X n matrices, so that R = $C^{-1}AC$ for some invertible n X n matrix C. Let the eigenvalues of A be the (not necessarily distinct) numbers $\lambda_1, \lambda_2 ,...,\lambda_{n}$ \\
+1. The eigenvalues of R are also $\lambda_1, \lambda_2 
+,..., \lambda_n$ \\
+2. The algebraic and geometric multiplicity of each $\lambda_i$ as an eigenvalue of A remains the same as when it is viewed as an eigenvalue of R. \\
+3. If $v_i$ in $R^n$ is an eigenvector of the matrix A corresponding to $\lambda_i$, then $C^{-1}v_i$ is an eigenvector of the matrix R corresponding to $\lambda_i$.
+
+\textbf {Definition 7.2 Diagonalizable Transformation} A linear transformation T of a finite-dimensional vector space V into itself is diagonalizable if V has an ordered basis consisting of eigenvectors of T.
+
+\textbf {Chapter 4.4 Linear Transformations and Determinants} Let $a_1, a_2, ... , a_n$ be n independent vectors in $R^m$ for n $\leq$m. The n-box in $R^m$ determined by these vectors is the set of all vectors x satisfying 
+
+\begin{center}
+x = $t_1 a_1 + t_2 a_2 + ... + t_n a_n$
+
+\end{center}
+
+for 0 $\leq t_i \leq 1 $ and $i = 1,2,...,n$
+
+\textbf {Theorem 4.7 Volume of a box} The volume of the n-box in $R^m$ determined by independent vectors $a_1, a_2,..., a_n$ is given by 
+
+\begin{center}
+Volume = $\sqrt{det(A^TA)}$,
+
+\end{center}
+
+where A is the m X n matrix with $a_j$ as the jth column vector.
+
+\textbf {Corollary Volume of an n-Box in $R^n$} If A is an n X n matrix with independent column vectors $a_1, a_2,..., a_n$, then |det(A)| is the volume of the n-box in $R^n$ determined by these n vectors.
+
+\textbf{Theorem 4.8 Volume-Change Factor for T: $R^n --> R^n$} Let G be a region in $R^n$ of volume V, and let T: $R^n --> R^n$ be a linear transformation of rank n with standard matrix representation A. Then the volume of the image of G under T is |det(A)|*V.
+
+
+
+
+
+
+
+
+\end{document}

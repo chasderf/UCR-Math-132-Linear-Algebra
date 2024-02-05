@@ -1,0 +1,155 @@
+\documentclass{article}
+
+\begin{document}
+
+\textbf {Chapter 6.1 Projections}
+
+\textit {Projection p of b on sp(a) in $R^R$}
+$p = \frac{b * a}{a * a} a$
+
+\textbf {Definition 6.1 Orthogonal Complement} Let W be a subspace of $R^n$. The set of all vectors in $R^n$ that are orthogonal to every vector in W is the orthogonal complement of W, and is denoted by $W^{\perp}$.
+
+\textbf {Theorem 6.1 Properties of $W^{\perp}$}
+The orthogonal complement $W^{\perp}$ of a subspace W of $R^n$ has the following properties: \\
+1. $W^{\perp}$ is a subspace of $R^n$ \\
+2. dim($W^{\perp}$ = n - dim(W). \\
+3. ($W^{\perp})^{\perp}$ = W; that is the orthogonal complement of $W^{\perp}$ is W \\
+4. Each vector b in $R^n$ can be expressed uniquely in the form $b = b_W + b_{W^{\perp}}$ for $b_W$ in W and $b_W^{\perp}$ in $W^{\perp}$.
+
+\textbf {Definition 6.2 Projection of b on W}
+Let b be a vector in $R^n$, and let W be a subspace of $R^n$. Let 
+\begin{center}
+b = $b_W + b_W^{\perp}$
+\end{center}
+
+as described in Theorem 6.1. Then $b_W$ is the projection of b on W.
+
+\textbf {Chapter 6.2 The Gram-Schmidt Process}
+
+\textbf {Theorem 6.2 Orthogonal Bases} Let {$v_1, v_2,...,v_k$} be an orthogonal set of nonzero vectors in $R^n$. Then this set is independent and consequently is a basis for the subspace sp($v_1,v_2,...,v_k$).
+
+\textbf {Theorem 6.3 Projection Using an Orthogonal Basis} Let {$v_1, v_2, ... , v_k$} be an orthogonal basis for a subspace W of $R^n$, and let b be any vector in $R^n$. The projection of b on W is 
+\begin{center}
+$b_W = {\frac{b*v_1}{v_1 * v_1}v_1} + {\frac{b * v_2}{v_2 * v_2} v_2} + ... + {\frac{b * v_k}{v_k * v_k} v_k}$
+\end{center}
+
+\textbf {Definition 6.3 Orthonormal Basis} Let W be a subspace of $R^n$. A basis {$q_1, q_2,..., q_k$} for W is orthonormal if \\
+1. $q_i * q_j$ = 0 for i $neq$ j       Mutually perpendicular \\
+
+2. $q_i * q_i$ = 1                         Length 1
+\\
+
+Projection of b on W with orhtonormal basis {$q_1, q_2,..., q_k$}
+\begin{center}
+$ b_w = (b * q_1)q_1 + (b * q_2)q_2 + ... + (b * q_k)q_k$
+\end{center}
+
+\textbf {Theorem 6.4 Orthonormal Basis (Gram-Schmidt) Theorem} Let W be a subspace of $R^n$, let {$a_1, a_2,...,a_k$} be any basis for W, and let
+\begin{center}
+$W_j = sp(a_1,a_2,...,a_j) for j = 1,2,...,k$
+\end{center}
+Then there is an orthonormal basis {$q_1, q_2,...,q_k$} for W such that $W_j = sp(q_1,q_2,..,q_j)$
+ \\
+
+\textbf {General Gram-Schmidt Formula} 
+\begin{center}
+$v_j = a_j - ({\frac{a_j * v_1}{v_1 * v_1}v_1} + {\frac {a_j * v_2}{v_2 * v_2}v_2} + ... + {\frac{a_j * v_{j-1}} {v_{j-1} * v_{j-1} j_{v-1}}}$
+\\
+\end{center}
+
+\textbf {Normalized Gram-Schmidt Formula}
+\begin{center}
+$v_j=a_j - ((a_j * q_1)q_1 + (a_j * q_2)q_2) + ... + (a_j * q_{j-1})q_{j-1}) $
+\end{center}
+
+\textbf {Corollary 1 QR-Factorization} Let A be an n X k matrix with independent column vectors in $R^n$. There exists an n X k matrix Q with orthonormal column vectors and an upper triangular invertible k X k matrix R such that A = QR.
+
+\textbf {6.3 Orthogonal Matrices} \\
+
+\textbf {Definition 6.4 Orthogonal Matrx} An n X n matrix A is orthogonal if $A^TA = L$
+\\
+
+\textbf {Theorem 6.5 Characterizing Properties of an Orthogonal Matrix} Let A be an n X n matrix. The following conditions are equivalent: \\
+
+1. The rows of A form an orthonormal basis for $R^N$ \\
+
+2. The columns of A form an orthonormal basis for $R^n$ \\ 
+
+3. The matrix A is orthogonal-that is,invertible with $A^{-1}= A^T$
+
+\textbf {Theorem 6.6 Properties of Ax for an Orthogonal Matrix A}
+Let A be an orthogonal n X n matrix and let x and y be any column vectors in $R^n$ \\
+1. (Ax) * (Ay) = x * y                  Preservation of dot product \\
+2. ||Ax|| = ||x||                          Preservation of length \\
+3. The angle between nonzero vectors x and y equeals the angle betweem Ax and Ay				Preservation of angle \\
+
+\textbf { Multiplication by orthogonal matrices is a stable operation}
+
+\textbf {Theorem 6.7 Orthogonality of Eigenspaces of a Real Symmetric Matrix} \\ Eigenvectors of a real symmetric matrix that correspond to different eigenvalues are orthogonal. That is, the eigenspaces of real symmetryic matrix are orthogonal.
+
+\textbf {Theorem 6.8 Fundamental Theorem of Real Symmetric Matrices} Every real symmetric matrix A is diagonalizable. The diagonalization $C^{-1}AC = D$ can be achieved by using a real orthogonal matrix C.
+
+\textbf {Definition 6.5 Orthogonal Linear Transformation} A linear transformation T: $R^n-->R^n$ is orthoganal if it satisfies T(v) * T(w) = v * w for all vectors v and w in $R^n$.
+
+\textbf {Theorem 6.9 Orthogonal Tranformations vis-a-vis matrices} A linear transformation T of $R^n$ into itself is orthogonal if and only if its standard matrix representation A is an orthogonal matrix.
+
+\textbf {Chapter 6.5 The Projection Matrix}
+
+\textbf {Theorem 6.10 The Rank of ($A^T$)A} Let A be an m X n matrix of rank r. Then the n X n symmetric matrix ($A^T$)A also has rank r.
+
+\textit {Properties of the Projection p of Vector b on the Subspace W.} \\
+1. The vector p must lie in the subspace W \\
+2. The vector b - p must be perpendicular to every vector in W.
+
+\textit {Projoection $b_w$ of b on subspace W} Let W = sp($a_1, a_2, ..., a_k$) be a k-dimensional subspace of $R^n$, and let A have as columns the vectors $a_1, a_2, ... , a_k$. The projection of b in $R^n$ on W is given by \\ 
+
+\begin{center}
+
+$b_w = A({A^T}A)^{-1} A^Tb$
+
+\end{center}
+
+\textit {The Projection Matrix P for the Subspace W} Let W = sp($a_1, a_2,...,a_k$) be a k-dimensional subspace of $R^n$, and let A have as columns the vectors $a_1, a_2,...,a_k$. The projection matrix for the subspace W is given by 
+
+\begin{center}
+$P = A(A^TA)^{-1}A^T$
+\end{center}
+
+\textbf {Theorem 6.11 Projection Matrix} Let W be a subspace of $R^n$. There is a unique n X n matrix P such that for each column vector b in $R^n$,  the vector $P_b$ is the projection of b on W. This projection matrix P can be found by selecting any basis {$a_1, a_2,...,a_k$} for W and computing $P = A(A^TA)^{-1}A^T$, where A is the n X k matrix having column vectors $a_1, a_2, ... , a_k$.
+
+\textit {Properties of a Projection Matrix P} \\
+1. $P^2$ = P             P is idempotent \\
+2. $P^T$ = P 				  P is symmetric
+
+\textbf {Theorem 6.12 Characterization of Projection Matrices } The projection matrix P for a subspace W of $R^n$ is both idempotent and symmetric. Conversely, every n X n matrix that is both idempotent and symmetric is a projection matrix: specifically, it is the projection matrix for its column space.
+
+\textit {Projection Matrix: Orthonormal Case} Let {$a_1,a_2,...,a_k$} be an orthonormal basis for a subspace W of $R^n$. The projection matrix for W is 
+\begin{center}
+P = $AA^T$,
+\end{center}
+
+where A is the n X k matrix having column vectors $a_1, a_2,...,a_k$
+
+\textit {Chapter 6.5 The method of least squares}
+
+\textbf {Least Squares Solution of Ar $\approx$ b} Let A be a matrix with independent column vectors. The least-squares solution $\bar{r}$ of Ar $\approx$ b can be computed in either of the follwing ways: \\
+1. Compute r = ($A^TA)^{-1}A^Tb$ \\
+2. Solve ($A^TA)r = A^Tb$ \\
+When a computer is being used, the second method is more efficient.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+	\textbf {Eigenvalues and eigenvectors} \textit {Basic definitions and methods for determining eigenvectors and eigenvalues, diagonalization, applications to computing powers of matrices and systems of linear differential equations.}
+
+Computations of $A^kx$ arise in any process in which information given by a column vector gives rise to analogous information at a later time by multiplying the vector by a matrix A.
+
+\textbf {Definition 5.1 Eigenvalues and Eigenvectors} Let A be an n X n matrix. \\
+ A scalar $\lambda$ is an eigenvalue of A if there is a nonzero column vector v in $R^n$ such that Av = $\lambda$v. The vector v is then an eigenvector of A corresponding to $\lambda$. (The terms characteristic vector and characteristic value or proper vector and proper value are also used in place of eigenvector and eigenvalue, respectively.)
+
+\textbf {Theorem 5.1 Properties of Eigenvalues and Eigenvectors} 
+\\
+Let A be an n X n matrix.
+\\
+1. If $\lambda$ is an eigenvalue of A with v as a corresponding eigenvector, then $\lambda^k$ is an eigenvalue of $A^k$, again with v as a corresponding eigenvector, for any positive integer k.
+\\
+2. If $\lambda$ is an eigenvalue of A of an invertible matrix A with v as a corresponding eigenvector, then $\lambda$ $\neq$ 0 and 1/$\lambda$ is an eigenvalue of $A^-1$, again with v as a corresponding eigenvector.
+\\
+3. If $\lambda$ is an eigenvalue of A, then the set $E_\lambda$ consisting of the zero vector together with all eigenvectors of A for this eigenvalue $\lambda$ is a subspace of n-space, the eigenspace of $\lambda$
+
+\textbf{Definition 5.2 Eigenvalues and eigenvectors}
+Let T be a linear transformation of vector space V into itself. A scalar $\lambda$ is an eigenvalue of T if there is a nonzero vector v in V such that T(v)=$\lambda$v. The vector v is then an eigenvector of T corresponding to $\lambda$.
+
+\textbf {5.2 Diagonalization}
+Let A be an n X n matrix and let $\lambda_1, \lambda_2,...\lambda_n$ be (possibly complex scalars and $v_1, v_2,..., v_n$ be nonzero vectors in n-space. Let C be the n X n matrix having $v_j$ as the jth column vector and let 
+\textit{OK OK this is my first latex matrix}
+
+
+D =
+
+
+$
+\begin{vmatrix}
+
+\lambda_1 & 0 & 0 & 0 \\
+0 & \lambda_2 & 0 & 0 \\
+0 & 0 & \lambda_3 & 0 \\
+0 & 0 & 0 & \lambda_4 \\  
+\end{vmatrix}
+$
+
+Then AC = CD if and only if $\lambda_1, \lambda_2, ..., \lambda_n$ are eigenvalues of A and $v_j$ is an eigenvector of A corresponding to $\lambda_j$ for j = 1,2,...n.
+
+\textbf {Definition 5.3 Diagonalizable Matrix} An n X n matrix A is diagonalizale if there exists an invertible matrix C such that $C^{-1}$AC = D, a diagonal matrix. The matrix C is said to diagonalize the matrix A.
+
+\textbf {Corollary 1 A Criterion for Diagonaiization} An n X n matrix A is diagonalizable if and only if n-space has a basis consisting of eigenvectors of A.
+
+\textbf {Corollary 2 Computation of $A^k$} Let an n X n matrix A have n eigenvectors and eigenvalues, giving rise to the matrices C and D so that AC = CD, as described in Theorem 5.2. If the n eigenvectors are independent, then C is an invertible matrix and $C^{-1}AC=D$. Under these conditions, we have
+
+\begin{center}
+
+$A^{k} = CD^{k}C^{-1}$
+\end{center}
+
+\textbf {Theorem 5.3 Independence of Eigenvectors}
+Let A be an n X n matrix. If $v_1$, $v_2$,..., $v_n$ are eigenvectors of A corresponding to distinct eigenvalues $\lambda_1$ , $\lambda_2$ , ... , $\lambda_n$ , respectively, the set {$v_1$, $v_2$, ...,$v_n$} is linearly independent and A is diagonalizable.
+
+\textbf {Definition 5.4 Similar Matrices}
+An n X n matrix P is similar to an n X n matrix Q if there exists an invertible n X n matrix C such that $C^{-1}PC=Q$.
+
+The geometric multiplicity of an eigenvalue of a matrix A is less than or equal to its algebraic multiplicity.
+
+\textbf {Theorem 5.4 A Criterion for Diagonalization} An n X n matrix A is diagonalizable if and only if the algebraic multiplicity of each (possibly complex) eigenvalue is equal to its geometric multiplicity.
+
+\textbf {Theorem 5.5 Diagonalization of Real Symmetric Matrices} Every real symmetric matrix is real diagonalizable. That is, if A is an n X n symmetric matrix with real number entries, then each eigenvalue of A is a real number, and its algebraic multiplicity equals its geometric multiplicity.
+
+\textbf {5.3 Two Applications}
+
+
+
+
+
+
+
+
+
+
+\end{document}
